@@ -18,7 +18,7 @@ app.get('/', function (request, response, next){
         {
             response.render('index', {data: data.rows[0]});
         }
-        client.end();
+        
     
     });
 
