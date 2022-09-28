@@ -13,7 +13,7 @@ app.get('/', function (request, response, next){
 
     client.query(query, (err, data) => {
         if (err) {
-            throw error;
+            throw err;
         }
         {
             response.render('index', {data: data.rows[0]});
